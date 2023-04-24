@@ -1,0 +1,12 @@
+// task build phases
+// initialization, configuration, execution
+
+task hello {
+  doFirst { // runs before execution phase
+    print 'Hello'
+  }
+
+  doLast { // runs after execution phase
+    println ' Gradle'
+  }
+}
