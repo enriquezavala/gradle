@@ -1,0 +1,12 @@
+task hello {
+  doLast {
+    print 'Hello'
+  }
+}
+
+task gradle {
+  dependsOn hello // add dependency, dependency runs first
+  doLast {
+    println ' Gradle'
+  }
+}
