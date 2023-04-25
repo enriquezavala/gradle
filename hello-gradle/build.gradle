@@ -1,4 +1,3 @@
-// add plugins
 plugins {
     id 'java' // java plugin has many tasks( build, test, javaDoc...)
 }
