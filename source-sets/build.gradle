@@ -1,0 +1,13 @@
+plugins {
+    id 'application' // java plugin + run task
+}
+
+mainClassName = 'mx.connecta.Main' // class name to run
+
+sourceSets { // change src directory
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
