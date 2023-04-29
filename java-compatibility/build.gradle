@@ -1,0 +1,8 @@
+plugins {
+    id 'java'
+}
+
+java { // configure java plugin
+    sourceCompatibility = JavaVersion.VERSION_1_10; // set source compatibility
+    targetCompatibility = JavaVersion.VERSION_1_10; // default value same as sourceCompatibility
+}
