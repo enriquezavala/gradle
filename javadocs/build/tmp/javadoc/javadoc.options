@@ -1,0 +1,7 @@
+-classpath '/Users/connecta/Repositories/gradle/javadocs/build/classes/java/main:/Users/connecta/Repositories/gradle/javadocs/build/resources/main'
+-d '/Users/connecta/Repositories/gradle/javadocs/build/docs/javadoc'
+-doctitle 'javadocs API'
+-notimestamp 
+-quiet 
+-windowtitle 'javadocs API'
+'/Users/connecta/Repositories/gradle/javadocs/src/main/java/mx.connecta/Main.java'
