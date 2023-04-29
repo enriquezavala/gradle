@@ -1,0 +1,11 @@
+plugins {
+    // javadoc task generates Javadoc API documentation for the main source code
+    id 'java' // add javadoc task
+}
+
+java {
+    // javadocJar task will package the output of the javadoc task in a JAR
+    withJavadocJar() // add javadocJar task
+    // sourcesJar task will package the Java sources of the main SourceSet in a JAR
+    withSourcesJar() // add sourcesJar task
+}
