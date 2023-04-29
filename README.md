@@ -5,3 +5,5 @@
 3. task-dependency
 4. plugins
 5. source-sets
+6. java-compatibility
+7. javadocs
