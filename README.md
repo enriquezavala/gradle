@@ -7,3 +7,4 @@
 5. source-sets
 6. java-compatibility
 7. javadocs
+8. file-repository
