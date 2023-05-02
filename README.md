@@ -8,3 +8,4 @@
 6. java-compatibility
 7. javadocs
 8. file-repository
+9. constants

@@ -1,0 +1,19 @@
+buildscript { // configuration when running gradle script
+    ext { // extra properties extensions allow new properties to be added to existing domain objects
+        log4j_version = '1.2.17' // constant for log4j version
+    }
+}
+
+plugins{
+    id 'java'
+}
+
+repositories {
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    implementation "log4j:log4j:$log4j_version" // use double quote for string interpolation
+}
