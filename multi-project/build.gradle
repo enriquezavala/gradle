@@ -1,0 +1,12 @@
+version='1.0.0'
+
+allprojects { // set settings for all projects
+    apply plugin: 'java' // needs to use this way instead id
+}
+
+project(':students') { // set settings for specific students project
+    println("students project")
+}
+project(':teachers') { // set settings for specific teachers project
+    println("teachers project")
+}
