@@ -1,0 +1,37 @@
+import org.gradle.api.tasks.testing.logging.TestLogEvent
+
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies { // dependencies for jUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}
+
+mainClassName = 'mx.connecta.Main'
+
+test {
+    useJUnitPlatform() // discover and execute JUnit platform-based tests
+    testLogging.showStandardStreams = true
+    testLogging { // test events that can be logged
+        events  TestLogEvent.FAILED
+                TestLogEvent.PASSED
+                TestLogEvent.SKIPPED
+    }
+}
+
+task gradleTest (type: Test) { // task to run testGradle only
+    group = 'Verification'
+    description = 'Runs testGradle test'
+
+    useJUnitPlatform()
+
+    filter { // filter to run testGradle only
+        includeTestsMatching 'mx.connecta.TestGradle.testGradle'
+    }
+}
