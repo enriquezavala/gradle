@@ -1,4 +1,4 @@
-## Gradle 7.6.1
+## Gradle
 
 1. hello-gradle
 2. tasks
